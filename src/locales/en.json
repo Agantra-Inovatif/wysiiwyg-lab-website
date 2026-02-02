@@ -1,0 +1,259 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Get in Touch"
+  },
+  "hero": {
+    "subtitle": "Premium Cinematic Services",
+    "title": "Capturing <1>Stories</1><br />From Every Angle",
+    "description": "We blend cutting-edge aerial technology with cinematic artistry to create visual experiences that move audiences and elevate brands.",
+    "cta_portfolio": "View Our Work",
+    "cta_showreel": "Watch Showreel"
+  },
+  "stats": {
+    "projects": "Projects Delivered",
+    "experience": "Years Experience",
+    "satisfaction": "Client Satisfaction",
+    "awards": "Industry Awards"
+  },
+  "services": {
+    "label": "What We Do",
+    "title": "Our Services",
+    "description": "From aerial cinematography to full digital agency services, we deliver excellence at every altitude.",
+    "cta_all": "Explore All Services",
+    "items": {
+      "aerial": {
+        "title": "Aerial Imaging",
+        "description": "Stunning drone footage and photography that captures perspectives impossible from the ground."
+      },
+      "media": {
+        "title": "Digital Media",
+        "description": "Full-service content creation from concept to final cut, telling your story with cinematic excellence."
+      },
+      "agency": {
+        "title": "Digital Agency",
+        "description": "White-label solutions or full creative team rental for agencies and enterprises."
+      },
+      "tech": {
+        "title": "Tech Solutions",
+        "description": "Advanced technology integration for logistics, surveying, and industrial applications."
+      }
+    }
+  },
+  "services_page": {
+    "hero": {
+      "subtitle": "Our Services",
+      "title": "Comprehensive <1>Creative</1><br />Solutions",
+      "description": "From high-altitude cinematography to ground-level storytelling, we offer end-to-end services that bring your vision to life."
+    },
+    "items": {
+      "aerial": {
+        "title": "Aerial Imaging & Cinematic Documentation",
+        "description": "Our fleet of professional-grade drones and certified pilots capture breathtaking aerial footage and photography. From sweeping landscape shots to precise industrial inspections, we deliver perspectives that transform how stories are told.",
+        "features": [
+          "4K/8K RAW Video Capture",
+          "360° Panoramic Photography",
+          "Thermal & Multispectral Imaging",
+          "Real-time Live Streaming"
+        ]
+      },
+      "media": {
+        "title": "Digital Media & Content Creation",
+        "description": "Full-service video production from concept development to final delivery. Our creative team crafts compelling visual narratives for documentaries, brand films, commercials, and social media content that resonates with your audience.",
+        "features": [
+          "Documentary Filmmaking",
+          "Brand Video Production",
+          "Commercial Photography",
+          "Social Media Content"
+        ]
+      },
+      "agency": {
+        "title": "Digital Agency as a Service",
+        "description": "Scale your capabilities with our white-label solutions or full creative team rental. We integrate seamlessly with your brand, providing the expertise and manpower you need without the overhead of building an in-house team.",
+        "features": [
+          "White-Label Production",
+          "Full Team Rental",
+          "Creative Direction",
+          "Enterprise Solutions"
+        ]
+      },
+      "tech": {
+        "title": "Technology & Logistics Solutions",
+        "description": "Advanced aerial technology for industrial applications. We provide precision mapping, asset inspection, logistics optimization, and data analytics services that help businesses make informed decisions and optimize operations.",
+        "features": [
+          "LiDAR & Photogrammetry",
+          "Logistics Optimization",
+          "Infrastructure Inspection",
+          "Data Analytics & Reporting"
+        ]
+      }
+    },
+    "process": {
+      "label": "How We Work",
+      "title": "Our Process",
+      "description": "A proven workflow that ensures exceptional results from concept to completion.",
+      "steps": {
+        "1": {
+          "title": "Discovery",
+          "description": "We dive deep into your vision, objectives, and requirements to craft a tailored approach."
+        },
+        "2": {
+          "title": "Planning",
+          "description": "Detailed pre-production including scouting, storyboarding, and logistics coordination."
+        },
+        "3": {
+          "title": "Production",
+          "description": "Expert execution with state-of-the-art equipment and our experienced creative team."
+        },
+        "4": {
+          "title": "Delivery",
+          "description": "Professional post-production and final delivery optimized for your platforms."
+        }
+      }
+    },
+    "cta": {
+      "title": "Let's Build Something Amazing",
+      "description": "Ready to take your project to new heights? Get in touch and let's discuss how our services can bring your vision to life.",
+      "quote": "Get a Quote",
+      "work": "View Our Work",
+      "learn_more": "Learn More",
+      "service_label": "Service"
+    }
+  },
+  "service_aerial": {
+    "hero": {
+      "subtitle": "Service 01",
+      "title": "Aerial Imaging & <1>Cinematic</1><br />Documentation",
+      "description": "Elevating perspectives to tell stories that resonate on a higher level."
+    },
+    "story": {
+      "label": "The Story",
+      "title": "Beyond the Horizon",
+      "p1": "In the early days of cinema, the \"bird's eye view\" was a luxury reserved for big-budget studios with helicopters and cranes. Today, we've democratized the sky, but the art of aerial storytelling remains a rare craft.",
+      "p2": "At WYSIIWYG Lab, we don't just fly drones; we choreograph cameras in three-dimensional space. We believe that an aerial shot shouldn't just be an establishing wide angle—it should be an emotional journey. Whether it's chasing a rally car through a forest at 100mph or slowly revealing a architectural masterpiece at sunrise, every movement is deliberate.",
+      "p3": "Our \"Aerial Imaging & Cinematic Documentation\" service is born from a passion for flight and a dedication to the frame. We merge the technical precision of aviation with the soulful eye of a cinematographer to capture the world in ways that were once impossible."
+    },
+    "features": {
+      "label": "Capabilities",
+      "title": "Technical Excellence",
+      "description": "State-of-the-art equipment meets world-class expertise.",
+      "items": {
+        "capture": {
+          "title": "Cinematic 8K Capture",
+          "description": "We utilize the latest cinema-grade drone cameras to capture footage with incredible dynamic range and resolution, suitable for IMAX screens."
+        },
+        "global": {
+          "title": "Global Deployment",
+          "description": "Our certified pilots are ready to deploy anywhere in the world, navigating complex regulatory environments to get the shot you need."
+        },
+        "safety": {
+          "title": "Safety First",
+          "description": "We operate with strict safety protocols and comprehensive insurance, ensuring peace of mind for every production."
+        },
+        "broadcast": {
+          "title": "Live Broadcasting",
+          "description": "Real-time low-latency downlink capabilities allow directors and clients to monitor the shot or broadcast live to the world."
+        }
+      }
+    },
+    "applications": {
+      "title": "Ideal Applications",
+      "items": [
+        "Feature Films & Documentaries",
+        "High-End Real Estate Showcases",
+        "Industrial Inspections & Surveying",
+        "Live Sports & Event Coverage",
+        "Tourism & Destination Marketing",
+        "Environmental Monitoring"
+      ]
+    },
+    "cta": {
+      "title": "Ready to Fly?",
+      "description": "Contact us today to discuss how our aerial imaging services can bring a new perspective to your project.",
+      "button": "Get a Quote"
+    }
+  },
+  "service_media": {
+    "hero": {
+      "subtitle": "Service 02",
+      "title": "Digital Media & <1>Content</1><br />Creation",
+      "description": "Crafting visual narratives that captivate audiences and define brands."
+    },
+    "story": {
+      "label": "The Story",
+      "title": "The Art of Connection",
+      "p1": "In a world saturated with noise, attention is the most valuable currency. But capturing attention is only the first step; holding it requires a story. At WYSIIWYG Lab, we are storytellers first and technicians second.",
+      "p2": "We understand that every brand, every product, and every person has a unique narrative waiting to be told. Our \"Digital Media & Content Creation\" service is designed to unearth that narrative and translate it into a visual language that resonates on an emotional level.",
+      "p3": "Whether it's a 60-second commercial that makes you laugh, a mini-documentary that makes you think, or a social media campaign that makes you click, our goal is always the same: to create a connection. We combine cinematic visuals with compelling scripts and immersive sound design to build worlds that your audience wants to inhabit."
+    },
+    "features": {
+      "label": "Capabilities",
+      "title": "Creative Excellence",
+      "description": "A full spectrum of production services to bring your vision to life.",
+      "items": {
+        "production": {
+          "title": "End-to-End Production",
+          "description": "From initial concept and storyboarding to filming, editing, and color grading, we handle every aspect of the production process."
+        },
+        "sound": {
+          "title": "Sound Design & Audio",
+          "description": "We believe audio is half the picture. Our team includes expert sound designers and composers to ensure your video sounds as good as it looks."
+        },
+        "motion": {
+          "title": "Motion Graphics & VFX",
+          "description": "Enhance your story with custom motion graphics, animation, and visual effects that clarify complex ideas and add production value."
+        },
+        "delivery": {
+          "title": "Multi-Platform Delivery",
+          "description": "Content optimized for every screen, from cinema projectors to mobile feeds, ensuring your message lands wherever your audience is."
+        }
+      }
+    },
+    "applications": {
+      "title": "What We Create",
+      "items": [
+        "Brand Films & Commercials",
+        "Corporate Documentaries",
+        "Product Launch Videos",
+        "Social Media Content Series",
+        "Event Highlight Reels",
+        "Educational & Training Content"
+      ]
+    },
+    "cta": {
+      "title": "Let's Tell Your Story",
+      "description": "Ready to captivate your audience? Contact us to start planning your next video production.",
+      "button": "Start a Project"
+    }
+  },
+  "portfolio": {
+    "label": "Featured Work",
+    "title": "Our Portfolio",
+    "description": "A selection of our finest aerial cinematography and documentary projects.",
+    "cta_full": "View Full Portfolio",
+    "items": {
+      "urban": "Urban Horizons",
+      "lens": "Behind the Lens",
+      "paradise": "Paradise Found"
+    }
+  },
+  "cta": {
+    "title": "Ready to Elevate Your Vision?",
+    "description": "Let's create something extraordinary together. Whether it's a documentary, brand campaign, or technical survey—we're ready to take your project to new heights.",
+    "button": "Start Your Project"
+  },
+  "footer": {
+    "description": "Premium imaging and cinematic documentation services. Capturing stories from every angle.",
+    "quick_links": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "partner_id": "PT Raksaka Teknologi Indonesia (Indonesian Partner) for Asia Region",
+    "partner_eu": "Agantra Inovatif OÜ (European Partner) for EU, UK and USA region",
+    "rights": "© 2025 WYSIIWYG Lab. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

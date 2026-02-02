@@ -1,0 +1,259 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "services": "Layanan",
+    "portfolio": "Portofolio",
+    "about": "Tentang Kami",
+    "contact": "Hubungi Kami"
+  },
+  "hero": {
+    "subtitle": "Layanan Sinematik Premium",
+    "title": "Mengabadikan <1>Cerita</1><br />Dari Segala Sudut",
+    "description": "Kami memadukan teknologi udara mutakhir dengan seni sinematik untuk menciptakan pengalaman visual yang menggerakkan audiens dan mengangkat merek.",
+    "cta_portfolio": "Lihat Karya Kami",
+    "cta_showreel": "Tonton Showreel"
+  },
+  "stats": {
+    "projects": "Proyek Terkirim",
+    "experience": "Tahun Pengalaman",
+    "satisfaction": "Kepuasan Klien",
+    "awards": "Penghargaan Industri"
+  },
+  "services": {
+    "label": "Apa yang Kami Lakukan",
+    "title": "Layanan Kami",
+    "description": "Dari sinematografi udara hingga layanan agensi digital lengkap, kami memberikan keunggulan di setiap ketinggian.",
+    "cta_all": "Jelajahi Semua Layanan",
+    "items": {
+      "aerial": {
+        "title": "Pencitraan Udara",
+        "description": "Rekaman drone dan fotografi menakjubkan yang menangkap perspektif yang mustahil dari darat."
+      },
+      "media": {
+        "title": "Media Digital",
+        "description": "Pembuatan konten layanan lengkap dari konsep hingga hasil akhir, menceritakan kisah Anda dengan keunggulan sinematik."
+      },
+      "agency": {
+        "title": "Agensi Digital",
+        "description": "Solusi label putih atau penyewaan tim kreatif lengkap untuk agensi dan perusahaan."
+      },
+      "tech": {
+        "title": "Solusi Teknologi",
+        "description": "Integrasi teknologi canggih untuk logistik, survei, dan aplikasi industri."
+      }
+    }
+  },
+  "services_page": {
+    "hero": {
+      "subtitle": "Layanan Kami",
+      "title": "Solusi <1>Kreatif</1><br />Komprehensif",
+      "description": "Dari sinematografi ketinggian tinggi hingga penceritaan di tingkat dasar, kami menawarkan layanan ujung ke ujung yang menghidupkan visi Anda."
+    },
+    "items": {
+      "aerial": {
+        "title": "Pencitraan Udara & Dokumentasi Sinematik",
+        "description": "Armada drone kelas profesional dan pilot bersertifikat kami menangkap rekaman udara dan fotografi yang menakjubkan. Dari pemotretan lanskap yang luas hingga inspeksi industri yang presisi, kami memberikan perspektif yang mengubah cara cerita diceritakan.",
+        "features": [
+          "Pengambilan Video RAW 4K/8K",
+          "Fotografi Panorama 360°",
+          "Pencitraan Termal & Multispektral",
+          "Streaming Langsung Real-time"
+        ]
+      },
+      "media": {
+        "title": "Media Digital & Pembuatan Konten",
+        "description": "Produksi video layanan lengkap dari pengembangan konsep hingga pengiriman akhir. Tim kreatif kami membuat narasi visual yang menarik untuk dokumenter, film merek, iklan, dan konten media sosial yang beresonansi dengan audiens Anda.",
+        "features": [
+          "Pembuatan Film Dokumenter",
+          "Produksi Video Merek",
+          "Fotografi Komersial",
+          "Konten Media Sosial"
+        ]
+      },
+      "agency": {
+        "title": "Agensi Digital sebagai Layanan",
+        "description": "Skalakan kemampuan Anda dengan solusi label putih kami atau penyewaan tim kreatif lengkap. Kami berintegrasi dengan mulus dengan merek Anda, memberikan keahlian dan tenaga kerja yang Anda butuhkan tanpa biaya overhead membangun tim internal.",
+        "features": [
+          "Produksi Label Putih",
+          "Penyewaan Tim Lengkap",
+          "Arahan Kreatif",
+          "Solusi Perusahaan"
+        ]
+      },
+      "tech": {
+        "title": "Solusi Teknologi & Logistik",
+        "description": "Teknologi udara canggih untuk aplikasi industri. Kami menyediakan pemetaan presisi, inspeksi aset, optimalisasi logistik, dan layanan analisis data yang membantu bisnis membuat keputusan yang tepat dan mengoptimalkan operasi.",
+        "features": [
+          "LiDAR & Fotogrametri",
+          "Optimalisasi Logistik",
+          "Inspeksi Infrastruktur",
+          "Analisis Data & Pelaporan"
+        ]
+      }
+    },
+    "process": {
+      "label": "Cara Kami Bekerja",
+      "title": "Proses Kami",
+      "description": "Alur kerja yang terbukti memastikan hasil luar biasa dari konsep hingga penyelesaian.",
+      "steps": {
+        "1": {
+          "title": "Penemuan",
+          "description": "Kami mendalami visi, tujuan, dan persyaratan Anda untuk menyusun pendekatan yang disesuaikan."
+        },
+        "2": {
+          "title": "Perencanaan",
+          "description": "Pra-produksi terperinci termasuk pencarian lokasi, storyboard, dan koordinasi logistik."
+        },
+        "3": {
+          "title": "Produksi",
+          "description": "Eksekusi ahli dengan peralatan canggih dan tim kreatif kami yang berpengalaman."
+        },
+        "4": {
+          "title": "Pengiriman",
+          "description": "Pasca-produksi profesional dan pengiriman akhir yang dioptimalkan untuk platform Anda."
+        }
+      }
+    },
+    "cta": {
+      "title": "Mari Membangun Sesuatu yang Luar Biasa",
+      "description": "Siap membawa proyek Anda ke ketinggian baru? Hubungi kami dan mari diskusikan bagaimana layanan kami dapat menghidupkan visi Anda.",
+      "quote": "Dapatkan Penawaran",
+      "work": "Lihat Karya Kami",
+      "learn_more": "Pelajari Lebih Lanjut",
+      "service_label": "Layanan"
+    }
+  },
+  "service_aerial": {
+    "hero": {
+      "subtitle": "Layanan 01",
+      "title": "Pencitraan Udara & <1>Sinematik</1><br />Dokumentasi",
+      "description": "Mengangkat perspektif untuk menceritakan kisah yang beresonansi pada tingkat yang lebih tinggi."
+    },
+    "story": {
+      "label": "Cerita",
+      "title": "Di Balik Cakrawala",
+      "p1": "Pada masa awal sinema, \"pandangan mata burung\" adalah kemewahan yang hanya dimiliki studio beranggaran besar dengan helikopter dan derek. Hari ini, kami telah mendemokratisasi langit, tetapi seni penceritaan udara tetap menjadi kerajinan yang langka.",
+      "p2": "Di WYSIIWYG Lab, kami tidak hanya menerbangkan drone; kami mengoreografi kamera dalam ruang tiga dimensi. Kami percaya bahwa bidikan udara tidak boleh hanya menjadi sudut lebar yang menetapkan—itu harus menjadi perjalanan emosional. Baik itu mengejar mobil reli melalui hutan dengan kecepatan 100mph atau perlahan mengungkapkan mahakarya arsitektur saat matahari terbit, setiap gerakan disengaja.",
+      "p3": "Layanan \"Pencitraan Udara & Dokumentasi Sinematik\" kami lahir dari hasrat untuk terbang dan dedikasi pada bingkai. Kami menggabungkan presisi teknis penerbangan dengan mata penuh perasaan seorang sinematografer untuk menangkap dunia dengan cara yang dulunya mustahil."
+    },
+    "features": {
+      "label": "Kemampuan",
+      "title": "Keunggulan Teknis",
+      "description": "Peralatan canggih bertemu dengan keahlian kelas dunia.",
+      "items": {
+        "capture": {
+          "title": "Pengambilan Sinematik 8K",
+          "description": "Kami menggunakan kamera drone kelas sinema terbaru untuk menangkap rekaman dengan rentang dinamis dan resolusi luar biasa, cocok untuk layar IMAX."
+        },
+        "global": {
+          "title": "Penyebaran Global",
+          "description": "Pilot bersertifikat kami siap dikerahkan di mana saja di dunia, menavigasi lingkungan peraturan yang kompleks untuk mendapatkan bidikan yang Anda butuhkan."
+        },
+        "safety": {
+          "title": "Keselamatan Terutama",
+          "description": "Kami beroperasi dengan protokol keselamatan yang ketat dan asuransi komprehensif, memastikan ketenangan pikiran untuk setiap produksi."
+        },
+        "broadcast": {
+          "title": "Siaran Langsung",
+          "description": "Kemampuan downlink latensi rendah real-time memungkinkan sutradara dan klien memantau bidikan atau menyiarkan langsung ke dunia."
+        }
+      }
+    },
+    "applications": {
+      "title": "Aplikasi Ideal",
+      "items": [
+        "Film Layar Lebar & Dokumenter",
+        "Pameran Real Estat Kelas Atas",
+        "Inspeksi Industri & Survei",
+        "Liputan Olahraga & Acara Langsung",
+        "Pariwisata & Pemasaran Destinasi",
+        "Pemantauan Lingkungan"
+      ]
+    },
+    "cta": {
+      "title": "Siap Terbang?",
+      "description": "Hubungi kami hari ini untuk mendiskusikan bagaimana layanan pencitraan udara kami dapat membawa perspektif baru ke proyek Anda.",
+      "button": "Dapatkan Penawaran"
+    }
+  },
+  "service_media": {
+    "hero": {
+      "subtitle": "Layanan 02",
+      "title": "Media Digital & <1>Pembuatan</1><br />Konten",
+      "description": "Membuat narasi visual yang memikat audiens dan mendefinisikan merek."
+    },
+    "story": {
+      "label": "Cerita",
+      "title": "Seni Koneksi",
+      "p1": "Di dunia yang penuh dengan kebisingan, perhatian adalah mata uang yang paling berharga. Tetapi menangkap perhatian hanyalah langkah pertama; menahannya membutuhkan sebuah cerita. Di WYSIIWYG Lab, kami adalah pendongeng pertama dan teknisi kedua.",
+      "p2": "Kami memahami bahwa setiap merek, setiap produk, dan setiap orang memiliki narasi unik yang menunggu untuk diceritakan. Layanan \"Media Digital & Pembuatan Konten\" kami dirancang untuk menggali narasi itu dan menerjemahkannya ke dalam bahasa visual yang beresonansi pada tingkat emosional.",
+      "p3": "Baik itu iklan 60 detik yang membuat Anda tertawa, dokumenter mini yang membuat Anda berpikir, atau kampanye media sosial yang membuat Anda mengklik, tujuan kami selalu sama: untuk menciptakan koneksi. Kami menggabungkan visual sinematik dengan naskah yang menarik dan desain suara yang imersif untuk membangun dunia yang ingin dihuni oleh audiens Anda."
+    },
+    "features": {
+      "label": "Kemampuan",
+      "title": "Keunggulan Kreatif",
+      "description": "Spektrum penuh layanan produksi untuk menghidupkan visi Anda.",
+      "items": {
+        "production": {
+          "title": "Produksi Ujung-ke-Ujung",
+          "description": "Dari konsep awal dan storyboard hingga pembuatan film, pengeditan, dan penilaian warna, kami menangani setiap aspek proses produksi."
+        },
+        "sound": {
+          "title": "Desain Suara & Audio",
+          "description": "Kami percaya audio adalah separuh dari gambar. Tim kami mencakup desainer suara dan komposer ahli untuk memastikan video Anda terdengar sebagus kelihatannya."
+        },
+        "motion": {
+          "title": "Grafik Gerak & VFX",
+          "description": "Tingkatkan cerita Anda dengan grafik gerak khusus, animasi, dan efek visual yang memperjelas ide-ide kompleks dan menambah nilai produksi."
+        },
+        "delivery": {
+          "title": "Pengiriman Multi-Platform",
+          "description": "Konten yang dioptimalkan untuk setiap layar, dari proyektor bioskop hingga umpan seluler, memastikan pesan Anda mendarat di mana pun audiens Anda berada."
+        }
+      }
+    },
+    "applications": {
+      "title": "Apa yang Kami Buat",
+      "items": [
+        "Film Merek & Iklan",
+        "Dokumenter Perusahaan",
+        "Video Peluncuran Produk",
+        "Seri Konten Media Sosial",
+        "Video Sorotan Acara",
+        "Konten Pendidikan & Pelatihan"
+      ]
+    },
+    "cta": {
+      "title": "Mari Ceritakan Kisah Anda",
+      "description": "Siap memikat audiens Anda? Hubungi kami untuk mulai merencanakan produksi video Anda berikutnya.",
+      "button": "Mulai Proyek"
+    }
+  },
+  "portfolio": {
+    "label": "Karya Unggulan",
+    "title": "Portofolio Kami",
+    "description": "Pilihan proyek sinematografi udara dan dokumenter terbaik kami.",
+    "cta_full": "Lihat Portofolio Lengkap",
+    "items": {
+      "urban": "Cakrawala Kota",
+      "lens": "Di Balik Lensa",
+      "paradise": "Surga Ditemukan"
+    }
+  },
+  "cta": {
+    "title": "Siap Mengangkat Visi Anda?",
+    "description": "Mari ciptakan sesuatu yang luar biasa bersama. Baik itu dokumenter, kampanye merek, atau survei teknis—kami siap membawa proyek Anda ke ketinggian baru.",
+    "button": "Mulai Proyek Anda"
+  },
+  "footer": {
+    "description": "Layanan pencitraan premium dan dokumentasi sinematik. Mengabadikan cerita dari setiap sudut.",
+    "quick_links": "Tautan Cepat",
+    "services": "Layanan",
+    "contact": "Kontak",
+    "partner_id": "PT Raksaka Teknologi Indonesia (Mitra Indonesia) untuk Wilayah Asia",
+    "partner_eu": "Agantra Inovatif OÜ (Mitra Eropa) untuk wilayah UE, Inggris, dan AS",
+    "rights": "© 2025 WYSIIWYG Lab. Hak cipta dilindungi undang-undang.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat Layanan"
+  }
+}
