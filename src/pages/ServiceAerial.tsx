@@ -114,10 +114,7 @@ const ServiceAerial = () => {
               className="relative"
             >
               <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-card border border-border">
-                 {/* Placeholder for a vertical image or video */}
-                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-background flex items-center justify-center">
-                    <Camera className="w-24 h-24 text-primary/40" />
-                 </div>
+                 <img src={heroBg} alt="Aerial Imaging" className="w-full h-full object-cover" />
               </div>
             </motion.div>
           </div>

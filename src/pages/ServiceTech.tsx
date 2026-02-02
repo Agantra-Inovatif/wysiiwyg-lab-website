@@ -107,10 +107,7 @@ const ServiceTech = () => {
               className="relative"
             >
               <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-card border border-border">
-                 {/* Placeholder for a vertical image or video */}
-                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-background flex items-center justify-center">
-                    <Cpu className="w-24 h-24 text-primary/40" />
-                 </div>
+                 <img src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Technology & Logistics" className="w-full h-full object-cover" />
               </div>
             </motion.div>
           </div>

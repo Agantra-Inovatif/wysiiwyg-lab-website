@@ -105,10 +105,7 @@ const ServiceAgency = () => {
               className="relative"
             >
               <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-card border border-border">
-                 {/* Placeholder for a vertical image or video */}
-                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-background flex items-center justify-center">
-                    <Users className="w-24 h-24 text-primary/40" />
-                 </div>
+                 <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Digital Agency Team" className="w-full h-full object-cover" />
               </div>
             </motion.div>
           </div>
