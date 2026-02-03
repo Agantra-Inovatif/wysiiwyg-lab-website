@@ -6,9 +6,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SectionHeader } from "@/components/SectionHeader";
-import { PortfolioCard } from "@/components/PortfolioCard";
 import heroBg from "@/assets/hero-bg.jpg";
-import { services, featuredWork, stats } from "@/lib/index-data";
+import { services } from "@/lib/index-data";
 import { useTranslation, Trans } from "react-i18next";
 
 const Index = () => {
@@ -74,8 +73,8 @@ const Index = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button variant="hero" size="xl" asChild>
-                <Link to="/portfolio">
-                  {t('hero.cta_portfolio')}
+                <Link to="/services">
+                  {t('services.title')}
                   <ArrowRight className="ml-2" />
                 </Link>
               </Button>
@@ -130,38 +129,6 @@ const Index = () => {
             <Button variant="outline" size="lg" asChild>
               <Link to="/services">
                 {t('services.cta_all')}
-                <ArrowRight className="ml-2" />
-              </Link>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Featured Work Section */}
-      <section className="py-24 md:py-32 bg-card">
-        <div className="container mx-auto px-6">
-          <SectionHeader
-            label={t('portfolio.label')}
-            title={t('portfolio.title')}
-            description={t('portfolio.description')}
-          />
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {featuredWork.map((work, index) => (
-              <PortfolioCard key={work.title} {...work} index={index} />
-            ))}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="text-center mt-12"
-          >
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/portfolio">
-                {t('portfolio.cta_full')}
                 <ArrowRight className="ml-2" />
               </Link>
             </Button>
