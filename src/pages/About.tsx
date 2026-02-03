@@ -6,10 +6,10 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SectionHeader } from "@/components/SectionHeader";
 import aboutHero from "@/assets/portfolio-5.jpg";
-import team1 from "@/assets/portfolio-1.jpg"; // Using existing portfolio image as placeholder
-import team2 from "@/assets/portfolio-2.jpg"; // Using existing portfolio image as placeholder
-import team3 from "@/assets/portfolio-3.jpg"; // Using existing portfolio image as placeholder
-import team4 from "@/assets/portfolio-4.jpg"; // Using existing portfolio image as placeholder
+import team1 from "@/assets/headshot-nicko.jpg"; // Using existing portfolio image as placeholder
+import team2 from "@/assets/headshot-airlangga.jpg"; // Using existing portfolio image as placeholder
+import team3 from "@/assets/headshot-basuki.png"; // Using existing portfolio image as placeholder
+import team4 from "@/assets/headshot-rika.jpeg"; // Using existing portfolio image as placeholder
 import { useTranslation, Trans } from "react-i18next";
 
 const teamMembers = [
