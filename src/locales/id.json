@@ -229,6 +229,37 @@
       "button": "Mulai Proyek"
     }
   },
+  "about_page": {
+    "hero": {
+      "subtitle": "Tentang Kami",
+      "title": "Merintis <1>Masa Depan</1><br />Penceritaan Visual",
+      "description": "Kami adalah kumpulan pencipta, teknolog, dan pendongeng yang bersatu oleh hasrat untuk mendorong batas-batas apa yang mungkin dengan media udara dan digital."
+    },
+    "values": {
+      "mission": {
+        "title": "Misi Kami",
+        "description": "Untuk mendefinisikan kembali penceritaan visual dengan menggabungkan teknologi inovatif dengan seni kreatif, memberikan perspektif yang tak tertandingi yang memikat dan menginspirasi."
+      },
+      "vision": {
+        "title": "Visi Kami",
+        "description": "Menjadi pemimpin global dalam media udara dan digital, terkenal karena kualitas, kreativitas, dan komitmen kami untuk mendorong batas-batas kemungkinan."
+      },
+      "values": {
+        "title": "Nilai Kami",
+        "description": "Kami didorong oleh kolaborasi, integritas, dan pengejaran keunggulan yang tak henti-hentinya, memastikan setiap proyek adalah bukti hasrat kami."
+      }
+    },
+    "team": {
+      "label": "Temui Kru",
+      "title": "Kepemimpinan Utama",
+      "description": "Pikiran kreatif dan tangan ahli di balik karya pemenang penghargaan kami."
+    },
+    "cta": {
+      "title": "Bergabunglah dengan Perjalanan Kami",
+      "description": "Kami selalu mencari bakat yang bersemangat. Jika Anda percaya pada kekuatan penceritaan, mari terhubung.",
+      "button": "Hubungi Kami"
+    }
+  },
   "portfolio": {
     "label": "Karya Unggulan",
     "title": "Portofolio Kami",

@@ -10,6 +10,7 @@ import team1 from "@/assets/portfolio-1.jpg"; // Using existing portfolio image 
 import team2 from "@/assets/portfolio-2.jpg"; // Using existing portfolio image as placeholder
 import team3 from "@/assets/portfolio-3.jpg"; // Using existing portfolio image as placeholder
 import team4 from "@/assets/portfolio-4.jpg"; // Using existing portfolio image as placeholder
+import { useTranslation, Trans } from "react-i18next";
 
 const teamMembers = [
   { 
@@ -38,13 +39,27 @@ const teamMembers = [
   },
 ];
 
-const values = [
-  { icon: Target, title: "Our Mission", description: "To redefine visual storytelling by merging innovative technology with creative artistry, delivering unparalleled perspectives that captivate and inspire." },
-  { icon: Award, title: "Our Vision", description: "To be the global leader in aerial and digital media, renowned for our quality, creativity, and commitment to pushing the boundaries of possibility." },
-  { icon: Users, title: "Our Values", description: "We are driven by collaboration, integrity, and a relentless pursuit of excellence, ensuring every project is a testament to our passion." },
-];
-
 const About = () => {
+  const { t } = useTranslation();
+
+  const values = [
+    { 
+      icon: Target, 
+      title: t('about_page.values.mission.title'), 
+      description: t('about_page.values.mission.description') 
+    },
+    { 
+      icon: Award, 
+      title: t('about_page.values.vision.title'), 
+      description: t('about_page.values.vision.description') 
+    },
+    { 
+      icon: Users, 
+      title: t('about_page.values.values.title'), 
+      description: t('about_page.values.values.description') 
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -59,16 +74,18 @@ const About = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <span className="inline-block text-primary font-medium uppercase tracking-widest text-sm mb-6">
-              About Us
+              {t('about_page.hero.subtitle')}
             </span>
             <h1 className="font-display font-bold text-5xl md:text-7xl text-foreground mb-6">
-              Pioneering The
-              <span className="text-gradient"> Future</span>
-              <br />
-              Of Visual Storytelling
+              <Trans i18nKey="about_page.hero.title">
+                Pioneering The
+                <span className="text-gradient"> Future</span>
+                <br />
+                Of Visual Storytelling
+              </Trans>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
-              We are a collective of creators, technologists, and storytellers united by a passion for pushing the boundaries of what's possible with aerial and digital media.
+              {t('about_page.hero.description')}
             </p>
           </motion.div>
         </div>
@@ -117,9 +134,9 @@ const About = () => {
       <section className="py-24 md:py-32 bg-card">
         <div className="container mx-auto px-6">
           <SectionHeader
-            label="Meet the Crew"
-            title="Key Leadership"
-            description="The creative minds and expert hands behind our award-winning work."
+            label={t('about_page.team.label')}
+            title={t('about_page.team.title')}
+            description={t('about_page.team.description')}
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
@@ -159,14 +176,14 @@ const About = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground mb-6">
-              Join Our Journey
+              {t('about_page.cta.title')}
             </h2>
             <p className="text-muted-foreground text-lg mb-10">
-              We're always looking for passionate talent. If you believe in the power of storytelling, let's connect.
+              {t('about_page.cta.description')}
             </p>
             <Button variant="hero" size="xl" asChild>
               <Link to="/contact">
-                Contact Us
+                {t('about_page.cta.button')}
                 <ArrowRight className="ml-2" />
               </Link>
             </Button>
