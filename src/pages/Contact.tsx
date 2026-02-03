@@ -85,7 +85,9 @@ const Contact = () => {
                 className="space-y-6"
                 name="contact"
                 method="POST"
+                action="/contact"
                 data-netlify="true"
+                data-netlify-recaptcha="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
               >
@@ -99,6 +101,7 @@ const Contact = () => {
                 </div>
                 <Input placeholder="Subject" name="subject" required disabled={isSubmitting} />
                 <Textarea placeholder="Your Message" rows={6} name="message" required disabled={isSubmitting} />
+                <div data-netlify-recaptcha="true"></div>
                 <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? (
                     <>
@@ -187,7 +190,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="pb-24 md:pb-32">
+      <section className="pb-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Surabaya Map */}
