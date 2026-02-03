@@ -1,13 +1,45 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowRight, Mail, Phone, MapPin, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SectionHeader } from "@/components/SectionHeader";
+import { toast } from "sonner";
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+      
+      toast.success("Message sent successfully!", {
+        description: "We'll get back to you as soon as possible.",
+      });
+      form.reset();
+    } catch (error) {
+      toast.error("Failed to send message", {
+        description: "Please try again later or contact us directly via email.",
+      });
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -49,16 +81,36 @@ const Contact = () => {
             >
               <h2 className="font-display font-bold text-3xl text-foreground mb-2">Send us a message</h2>
               <p className="text-muted-foreground mb-8">We'll get back to you as soon as possible.</p>
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <Input placeholder="Your Name" />
-                  <Input type="email" placeholder="Your Email" />
+              <form 
+                className="space-y-6"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                  <input name="bot-field" />
                 </div>
-                <Input placeholder="Subject" />
-                <Textarea placeholder="Your Message" rows={6} />
-                <Button type="submit" variant="hero" size="lg" className="w-full">
-                  Send Message
-                  <ArrowRight className="ml-2" />
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <Input placeholder="Your Name" name="name" required disabled={isSubmitting} />
+                  <Input type="email" placeholder="Your Email" name="email" required disabled={isSubmitting} />
+                </div>
+                <Input placeholder="Subject" name="subject" required disabled={isSubmitting} />
+                <Textarea placeholder="Your Message" rows={6} name="message" required disabled={isSubmitting} />
+                <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      Send Message
+                      <ArrowRight className="ml-2" />
+                    </>
+                  )}
                 </Button>
               </form>
             </motion.div>
