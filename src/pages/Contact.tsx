@@ -1,45 +1,10 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Phone, MapPin, Loader2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SectionHeader } from "@/components/SectionHeader";
-import { toast } from "sonner";
 
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    try {
-      await fetch("/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as any).toString(),
-      });
-      
-      toast.success("Message sent successfully!", {
-        description: "We'll get back to you as soon as possible.",
-      });
-      form.reset();
-    } catch (error) {
-      toast.error("Failed to send message", {
-        description: "Please try again later or contact us directly via email.",
-      });
-      console.error("Form submission error:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -67,61 +32,13 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Form & Details Section */}
+      {/* Contact Details Section */}
       <section className="py-24 md:py-32">
         <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            {/* Contact Form */}
+          <div className="max-w-4xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="bg-card p-8 md:p-12 rounded-2xl border border-border"
-            >
-              <h2 className="font-display font-bold text-3xl text-foreground mb-2">Send us a message</h2>
-              <p className="text-muted-foreground mb-8">We'll get back to you as soon as possible.</p>
-              <form 
-                className="space-y-6"
-                name="contact"
-                method="POST"
-                action="/contact"
-                data-netlify="true"
-                data-netlify-recaptcha="true"
-                data-netlify-honeypot="bot-field"
-                onSubmit={handleSubmit}
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <div hidden>
-                  <input name="bot-field" />
-                </div>
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <Input placeholder="Your Name" name="name" required disabled={isSubmitting} />
-                  <Input type="email" placeholder="Your Email" name="email" required disabled={isSubmitting} />
-                </div>
-                <Input placeholder="Subject" name="subject" required disabled={isSubmitting} />
-                <Textarea placeholder="Your Message" rows={6} name="message" required disabled={isSubmitting} />
-                <div data-netlify-recaptcha="true"></div>
-                <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      Send Message
-                      <ArrowRight className="ml-2" />
-                    </>
-                  )}
-                </Button>
-              </form>
-            </motion.div>
-
-            {/* Contact Details */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
               className="space-y-12"
@@ -130,56 +47,58 @@ const Contact = () => {
                 label="Contact Info"
                 title="Our Offices"
                 description="Reach out to our regional partners."
-                className="text-left items-start"
+                className="text-center"
                 titleClassName="text-3xl"
               />
               
-              {/* Indonesia Partner */}
-              <div className="space-y-4">
-                <h3 className="font-display font-bold text-xl text-foreground">PT Raksaka Teknologi Indonesia (Indonesian Partner) for Asia Region</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors">
-                      <Mail className="w-5 h-5 text-primary" />
+              <div className="grid md:grid-cols-2 gap-12">
+                {/* Indonesia Partner */}
+                <div className="space-y-4 p-6 rounded-2xl bg-card border border-border">
+                  <h3 className="font-display font-bold text-xl text-foreground">PT Raksaka Teknologi Indonesia (Indonesian Partner) for Asia Region</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-4 group">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                        <Mail className="w-5 h-5 text-primary" />
+                      </div>
+                      <a href="mailto:info@raksakateknologi.com" className="text-muted-foreground group-hover:text-foreground transition-colors break-all">info@raksakateknologi.com</a>
                     </div>
-                    <a href="mailto:info@raksakateknologi.com" className="text-muted-foreground group-hover:text-foreground transition-colors">info@raksakateknologi.com</a>
-                  </div>
-                  <div className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors">
-                      <Phone className="w-5 h-5 text-primary" />
+                    <div className="flex items-center gap-4 group">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                        <Phone className="w-5 h-5 text-primary" />
+                      </div>
+                      <a href="https://wa.me/628884900250" target="_blank" rel="noopener noreferrer" className="text-muted-foreground group-hover:text-foreground transition-colors">+62 888 4900 250</a>
                     </div>
-                    <a href="https://wa.me/628884900250" target="_blank" rel="noopener noreferrer" className="text-muted-foreground group-hover:text-foreground transition-colors">+62 888 4900 250</a>
-                  </div>
-                  <div className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors">
-                      <MapPin className="w-5 h-5 text-primary" />
+                    <div className="flex items-center gap-4 group">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                        <MapPin className="w-5 h-5 text-primary" />
+                      </div>
+                      <span className="text-muted-foreground">Surabaya, Indonesia</span>
                     </div>
-                    <span className="text-muted-foreground">Surabaya, Indonesia</span>
                   </div>
                 </div>
-              </div>
 
-              {/* European Partner */}
-              <div className="space-y-4">
-                <h3 className="font-display font-bold text-xl text-foreground">Agantra Inovatif OÜ (European Partner) for EU, UK and USA region</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors">
-                      <Mail className="w-5 h-5 text-primary" />
+                {/* European Partner */}
+                <div className="space-y-4 p-6 rounded-2xl bg-card border border-border">
+                  <h3 className="font-display font-bold text-xl text-foreground">Agantra Inovatif OÜ (European Partner) for EU, UK and USA region</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-4 group">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                        <Mail className="w-5 h-5 text-primary" />
+                      </div>
+                      <a href="mailto:info@nextmantra.com" className="text-muted-foreground group-hover:text-foreground transition-colors break-all">info@nextmantra.com</a>
                     </div>
-                    <a href="mailto:info@nextmantra.com" className="text-muted-foreground group-hover:text-foreground transition-colors">info@nextmantra.com</a>
-                  </div>
-                  <div className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors">
-                      <Phone className="w-5 h-5 text-primary" />
+                    <div className="flex items-center gap-4 group">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                        <Phone className="w-5 h-5 text-primary" />
+                      </div>
+                      <a href="https://wa.me/37253194019" target="_blank" rel="noopener noreferrer" className="text-muted-foreground group-hover:text-foreground transition-colors">+372 5319 4019</a>
                     </div>
-                    <a href="https://wa.me/37253194019" target="_blank" rel="noopener noreferrer" className="text-muted-foreground group-hover:text-foreground transition-colors">+372 5319 4019</a>
-                  </div>
-                  <div className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors">
-                      <MapPin className="w-5 h-5 text-primary" />
+                    <div className="flex items-center gap-4 group">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-border group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                        <MapPin className="w-5 h-5 text-primary" />
+                      </div>
+                      <span className="text-muted-foreground">Tallinn, Estonia</span>
                     </div>
-                    <span className="text-muted-foreground">Tallinn, Estonia</span>
                   </div>
                 </div>
               </div>
@@ -190,7 +109,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="pb-24 md:py-32">
+      <section className="pb-24 md:pb-32">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Surabaya Map */}

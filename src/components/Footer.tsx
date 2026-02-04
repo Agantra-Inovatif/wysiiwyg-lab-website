@@ -2,6 +2,20 @@ import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Instagram, Linkedin, Youtube } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+const TiktokIcon = ({ className }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    className={className}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
+
 export const Footer = () => {
   const { t } = useTranslation();
 
@@ -25,6 +39,9 @@ export const Footer = () => {
             <div className="flex gap-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram size={20} />
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <TiktokIcon className="w-5 h-5" />
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={20} />
