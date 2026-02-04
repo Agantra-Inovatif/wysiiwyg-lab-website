@@ -43,7 +43,7 @@ export const Footer = () => {
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <TiktokIcon className="w-5 h-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/company/wysiiwyg-lab" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={20} />
               </a>
               <a href="https://www.youtube.com/@WYSIIWYG-Lab" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
