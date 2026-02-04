@@ -162,9 +162,11 @@ const Index = () => {
             <p className="text-muted-foreground text-lg mb-10">
               {t('cta.description')}
             </p>
-            <Button variant="hero" size="xl">
-              {t('cta.button')}
-              <ArrowRight className="ml-2" />
+            <Button variant="hero" size="xl" asChild>
+              <Link to="/contact">
+                {t('cta.button')}
+                <ArrowRight className="ml-2" />
+              </Link>
             </Button>
           </motion.div>
         </div>
