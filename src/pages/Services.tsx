@@ -134,6 +134,11 @@ const Services = () => {
                         {t('services_page.cta.learn_more')}
                         <ArrowRight className="ml-2" />
                       </Link>
+                    ) : index === 3 ? (
+                      <Link to="/services/tech">
+                        {t('services_page.cta.learn_more')}
+                        <ArrowRight className="ml-2" />
+                      </Link>
                     ) : (
                       <Link to="/contact">
                         {t('services_page.cta.learn_more')}
@@ -245,9 +250,11 @@ const Services = () => {
                 {t('services_page.cta.quote')}
                 <ArrowRight className="ml-2" />
               </Button>
+              {/* Button hidden as per request
               <Button variant="heroOutline" size="xl" asChild>
                 <Link to="/portfolio">{t('services_page.cta.work')}</Link>
               </Button>
+              */}
             </div>
           </motion.div>
         </div>

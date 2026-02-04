@@ -12,7 +12,7 @@ const TargetIndustries = () => {
   const { t } = useTranslation();
 
   const industries = [
-    { icon: Building2, key: "hotel", service: "service01" },
+    { icon: Building2, key: "hotel", service: "service03" },
     { icon: Sprout, key: "plantation", service: "service01" },
     { icon: Hammer, key: "mining", service: "service01" },
     { icon: Leaf, key: "green", service: "service01" },

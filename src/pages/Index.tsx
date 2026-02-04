@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SectionHeader } from "@/components/SectionHeader";
 import heroBg from "@/assets/hero-bg.jpg";
-import { services, stats } from "@/lib/index-data";
+import { services } from "@/lib/index-data";
 import { useTranslation, Trans } from "react-i18next";
 
 const Index = () => {
@@ -75,12 +75,14 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
+              {/* Button hidden as per request
               <Button variant="hero" size="xl" asChild>
                 <Link to="/services">
                   {t('services.title')}
                   <ArrowRight className="ml-2" />
                 </Link>
               </Button>
+              */}
               <Button variant="heroOutline" size="xl">
                 <Play className="mr-2" />
                 {t('hero.cta_showreel')}
