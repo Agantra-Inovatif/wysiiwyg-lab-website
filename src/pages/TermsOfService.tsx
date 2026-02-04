@@ -20,7 +20,7 @@ const TermsOfService = () => {
             </h1>
             
             <div className="prose prose-lg prose-invert mx-auto text-muted-foreground">
-              <p>Last updated: July 26, 2024</p>
+              <p>Last updated: February 4, 2026</p>
               
               <p>Please read these terms and conditions carefully before using Our Service.</p>
 
@@ -42,8 +42,6 @@ const TermsOfService = () => {
               <h2>Governing Law</h2>
               <p>The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.</p>
 
-              <h2>Contact Us</h2>
-              <p>If you have any questions about these Terms and Conditions, You can contact us by email: info@wysiiwyg.com</p>
             </div>
           </motion.div>
         </div>
