@@ -4,7 +4,8 @@
     "services": "Layanan",
     "portfolio": "Portofolio",
     "about": "Tentang Kami",
-    "contact": "Hubungi Kami"
+    "contact": "Hubungi Kami",
+    "industries": "Industri"
   },
   "hero": {
     "subtitle": "Layanan Sinematik Premium",
@@ -257,6 +258,53 @@
     "cta": {
       "title": "Bergabunglah dengan Perjalanan Kami",
       "description": "Kami selalu mencari bakat yang bersemangat. Jika Anda percaya pada kekuatan penceritaan, mari terhubung.",
+      "button": "Hubungi Kami"
+    }
+  },
+  "industries_page": {
+    "hero": {
+      "subtitle": "Industri Target",
+      "title": "Industri yang Kami <1>Layani</1>",
+      "description": "Solusi yang disesuaikan untuk berbagai sektor, memanfaatkan keahlian kami untuk memenuhi tantangan industri tertentu."
+    },
+    "groups": {
+      "service01": "Didukung oleh Pencitraan Udara",
+      "service02": "Ditingkatkan oleh Media Digital",
+      "service03": "Didukung oleh Agensi Digital"
+    },
+    "items": {
+      "hotel": {
+        "title": "Jaringan Hotel",
+        "description": "Pamerkan properti Anda dengan pemandangan udara yang menakjubkan dan tur virtual imersif yang menarik tamu dari seluruh dunia."
+      },
+      "car": {
+        "title": "Distribusi Mobil",
+        "description": "Buat konten dinamis untuk peluncuran kendaraan dan logistik distribusi, menyoroti kecepatan, desain, dan efisiensi."
+      },
+      "cafe": {
+        "title": "Kafe dan Tempat Makan",
+        "description": "Tangkap suasana dan kelezatan kuliner tempat Anda dengan visual yang menggugah selera dan konten media sosial yang menarik."
+      },
+      "factory": {
+        "title": "Pabrik dan Manufaktur",
+        "description": "Optimalkan operasi dan pamerkan kemampuan dengan inspeksi industri, pemantauan keselamatan, dan tur fasilitas promosi."
+      },
+      "plantation": {
+        "title": "Perkebunan",
+        "description": "Pantau kesehatan tanaman, optimalkan irigasi, dan kelola lahan luas dengan pertanian presisi dan pemetaan udara."
+      },
+      "mining": {
+        "title": "Pertambangan dan Pengolahan",
+        "description": "Tingkatkan keselamatan dan efisiensi dalam operasi penambangan dengan pengukuran volumetrik, pemetaan medan, dan inspeksi area berbahaya."
+      },
+      "green": {
+        "title": "Teknologi Hijau",
+        "description": "Dukung proyek energi terbarukan dengan survei lokasi, inspeksi infrastruktur, dan dokumentasi visual yang menarik tentang upaya keberlanjutan."
+      }
+    },
+    "cta": {
+      "title": "Siap Mengubah Industri Anda?",
+      "description": "Hubungi kami untuk mengetahui bagaimana solusi khusus kami dapat mendorong pertumbuhan dan efisiensi di sektor Anda.",
       "button": "Hubungi Kami"
     }
   },

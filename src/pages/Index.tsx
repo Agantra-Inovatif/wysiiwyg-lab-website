@@ -7,11 +7,14 @@ import { Footer } from "@/components/Footer";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SectionHeader } from "@/components/SectionHeader";
 import heroBg from "@/assets/hero-bg.jpg";
-import { services } from "@/lib/index-data";
+import { services, stats } from "@/lib/index-data";
 import { useTranslation, Trans } from "react-i18next";
 
 const Index = () => {
   const { t } = useTranslation();
+
+  // Filter services to show only the first 3
+  const visibleServices = services.slice(0, 3);
 
   return (
     <div className="min-h-screen bg-background">
@@ -114,7 +117,7 @@ const Index = () => {
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
+            {visibleServices.map((service, index) => (
               <ServiceCard key={service.title} {...service} index={index} />
             ))}
           </div>

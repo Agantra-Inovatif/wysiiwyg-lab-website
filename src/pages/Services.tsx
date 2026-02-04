@@ -11,21 +11,23 @@ import { useTranslation, Trans } from "react-i18next";
 const Services = () => {
   const { t } = useTranslation();
 
-  // Reconstruct mainServices with translations
-  const translatedServices = mainServices.map((service, index) => {
-    const serviceKey = index === 0 ? 'aerial' : index === 1 ? 'media' : index === 2 ? 'agency' : 'tech';
-    const features = t(`services_page.items.${serviceKey}.features`, { returnObjects: true }) as string[];
-    
-    return {
-      ...service,
-      title: t(`services_page.items.${serviceKey}.title`),
-      description: t(`services_page.items.${serviceKey}.description`),
-      features: service.features.map((feature, i) => ({
-        ...feature,
-        text: features[i] || feature.text
-      }))
-    };
-  });
+  // Reconstruct mainServices with translations, filtering out the 4th service (index 3)
+  const translatedServices = mainServices
+    .slice(0, 3) // Keep only the first 3 services
+    .map((service, index) => {
+      const serviceKey = index === 0 ? 'aerial' : index === 1 ? 'media' : 'agency';
+      const features = t(`services_page.items.${serviceKey}.features`, { returnObjects: true }) as string[];
+      
+      return {
+        ...service,
+        title: t(`services_page.items.${serviceKey}.title`),
+        description: t(`services_page.items.${serviceKey}.description`),
+        features: service.features.map((feature, i) => ({
+          ...feature,
+          text: features[i] || feature.text
+        }))
+      };
+    });
 
   // Reconstruct processSteps with translations
   const translatedProcessSteps = processSteps.map((step, index) => {
@@ -129,11 +131,6 @@ const Services = () => {
                       </Link>
                     ) : index === 2 ? (
                       <Link to="/services/agency">
-                        {t('services_page.cta.learn_more')}
-                        <ArrowRight className="ml-2" />
-                      </Link>
-                    ) : index === 3 ? (
-                      <Link to="/services/tech">
                         {t('services_page.cta.learn_more')}
                         <ArrowRight className="ml-2" />
                       </Link>

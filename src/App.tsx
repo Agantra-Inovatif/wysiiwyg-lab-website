@@ -8,7 +8,7 @@ import Services from "./pages/Services";
 import ServiceAerial from "./pages/ServiceAerial";
 import ServiceMedia from "./pages/ServiceMedia";
 import ServiceAgency from "./pages/ServiceAgency";
-import ServiceTech from "./pages/ServiceTech";
+import TargetIndustries from "./pages/TargetIndustries";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -30,7 +30,7 @@ const App = () => (
           <Route path="/services/aerial" element={<ServiceAerial />} />
           <Route path="/services/media" element={<ServiceMedia />} />
           <Route path="/services/agency" element={<ServiceAgency />} />
-          <Route path="/services/tech" element={<ServiceTech />} />
+          <Route path="/industries" element={<TargetIndustries />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

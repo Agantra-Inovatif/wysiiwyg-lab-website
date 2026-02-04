@@ -4,7 +4,8 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "about": "About",
-    "contact": "Get in Touch"
+    "contact": "Get in Touch",
+    "industries": "Industries"
   },
   "hero": {
     "subtitle": "Premium Cinematic Services",
@@ -258,6 +259,53 @@
       "title": "Join Our Journey",
       "description": "We're always looking for passionate talent. If you believe in the power of storytelling, let's connect.",
       "button": "Contact Us"
+    }
+  },
+  "industries_page": {
+    "hero": {
+      "subtitle": "Target Industries",
+      "title": "Industries We <1>Serve</1>",
+      "description": "Tailored solutions for diverse sectors, leveraging our expertise to meet specific industry challenges."
+    },
+    "groups": {
+      "service01": "Powered by Aerial Imaging",
+      "service02": "Elevated by Digital Media",
+      "service03": "Supported by Digital Agency"
+    },
+    "items": {
+      "hotel": {
+        "title": "Hotel Chain",
+        "description": "Showcase your properties with stunning aerial views and immersive virtual tours that attract guests from around the world."
+      },
+      "car": {
+        "title": "Car Distribution",
+        "description": "Create dynamic content for vehicle launches and distribution logistics, highlighting speed, design, and efficiency."
+      },
+      "cafe": {
+        "title": "Cafe and Eaters",
+        "description": "Capture the ambiance and culinary delights of your establishment with mouth-watering visuals and engaging social media content."
+      },
+      "factory": {
+        "title": "Factories and Manufactures",
+        "description": "Optimize operations and showcase capabilities with industrial inspection, safety monitoring, and promotional facility tours."
+      },
+      "plantation": {
+        "title": "Plantation",
+        "description": "Monitor crop health, optimize irrigation, and manage vast land areas with precision agriculture and aerial mapping."
+      },
+      "mining": {
+        "title": "Mining and Processing",
+        "description": "Enhance safety and efficiency in mining operations with volumetric measurements, terrain mapping, and hazardous area inspection."
+      },
+      "green": {
+        "title": "Green Technology",
+        "description": "Support renewable energy projects with site surveys, infrastructure inspection, and compelling visual documentation of sustainability efforts."
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Industry?",
+      "description": "Contact us to discover how our specialized solutions can drive growth and efficiency in your sector.",
+      "button": "Get in Touch"
     }
   },
   "portfolio": {
