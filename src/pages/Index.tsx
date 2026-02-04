@@ -83,10 +83,12 @@ const Index = () => {
                 </Link>
               </Button>
               */}
+              {/* Showreel button hidden as per request
               <Button variant="heroOutline" size="xl">
                 <Play className="mr-2" />
                 {t('hero.cta_showreel')}
               </Button>
+              */}
             </motion.div>
           </div>
         </div>
